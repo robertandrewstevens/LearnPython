@@ -1,0 +1,60 @@
+---
+title: "ex6"
+author: "Robert A. Stevens"
+date: "July 9, 2014"
+output: html_document
+---
+
+http://learnpythonthehardway.org/book/ex6.html
+
+Exercise 6: Strings and Text
+
+Python code
+
+```{r, engine='python'}
+x = "There are %d types of people." % 10
+binary = "binary"
+do_not = "don't"
+y = "Those who know %s and those who %s." % (binary, do_not)
+
+print x
+print y
+
+print "I said: %r." % x
+print "I also said: '%s'." % y
+
+hilarious = False
+joke_evaluation = "Isn't that joke so funny?! %r"
+
+print joke_evaluation % hilarious
+
+w = "This is the left side of..."
+e = "a string with a right side."
+
+print w + e
+```
+
+R code
+
+```{r}
+x <- "There are %d types of people."
+binary <- "binary"
+do_not <- "don't"
+y <- "Those who know %s and those who %s."
+
+sprintf(x, 10)
+sprintf(y, binary, do_not)
+
+print(paste("I said:", sprintf(x, 10)))
+print(paste("I also said:", sprintf(y, binary, do_not)))
+
+hilarious <- FALSE
+joke_evaluation <- "Isn't that joke so funny?! %s"
+
+sprintf(joke_evaluation, hilarious)
+
+w <- "This is the left side of..."
+e <- "a string with a right side."
+
+print(paste(w, e))
+```
