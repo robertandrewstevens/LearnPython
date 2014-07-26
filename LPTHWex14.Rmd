@@ -1,0 +1,84 @@
+---
+title: "ex14"
+author: "Robert A. Stevens"
+date: "July 26, 2014"
+output: html_document
+---
+
+http://learnpythonthehardway.org/book/ex14.html
+
+Exercise 14: Prompting and Passing
+
+## Python code
+
+**TODO**:  figure out how to do this in RMarkdown
+
+When you run this, remember that you have to give the script your name for the argv arguments.
+
+$ python ex14.py zed
+
+```{r, engine='python'}
+from sys import argv
+
+script, user_name = argv
+prompt = '> '
+
+print "Hi %s, I'm the %s script." % (user_name, script)
+print "I'd like to ask you a few questions."
+print "Do you like me %s?" % user_name
+likes = raw_input(prompt)
+
+print "Where do you live %s?" % user_name
+lives = raw_input(prompt)
+
+print "What kind of computer do you have?"
+computer = raw_input(prompt)
+
+print """
+Alright, so you said %r about liking me.
+You live in %r.  Not sure where that is.
+And you have a %r computer.  Nice.
+""" % (likes, lives, computer)
+```
+
+So that it shows:
+
+Hi zed, I'm the ex14.py script.  
+I'd like to ask you a few questions.  
+Do you like me zed?  
+>  Yes  
+Where do you live zed?  
+>  San Francisco  
+What kind of computer do you have?  
+>  Tandy 1000  
+
+Alright, so you said 'Yes' about liking me.  
+You live in 'San Francisco'.  Not sure where that is.  
+And you have a 'Tandy 1000' computer.  Nice.  
+
+## R code
+
+**TODO**:  figure out how to do same/similar in R
+
+In the meantime, substitute the following:
+
+```{r, results="hold", collapse=TRUE}
+script <- "ex14.R"
+user_name <- "zed"
+prompt <- '> '
+
+sprintf("Hi %s, I'm the %s script.", user_name, script)
+sprintf("I'd like to ask you a few questions.")
+sprintf("Do you like me %s?", user_name)
+(likes <- "Yes") # instead of "likes <- readline(prompt)"
+
+sprintf("Where do you live %s?", user_name)
+(lives <- "San Francisco") # instead of "lives <- readline(prompt)"
+
+sprintf("What kind of computer do you have?")
+(computer <- "Tandy 1000") # instead of "computer < readline(prompt)"
+
+sprintf("Alright, so you said %s about liking me.", likes)
+sprintf("You live in %s.  Not sure where that is.", lives)
+sprintf("And you have a %s computer.  Nice.", computer)
+```
