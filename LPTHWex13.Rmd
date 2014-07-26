@@ -1,0 +1,55 @@
+---
+title: "ex13"
+author: "Robert A. Stevens"
+date: "July 26, 2014"
+output: html_document
+---
+
+http://learnpythonthehardway.org/book/ex13.html
+
+Exercise 13: Parameters, Unpacking, Variables
+
+## Python code
+
+**TODO**:  figure out how to do this in RMarkdown
+
+Run the program like this (and you must pass three command line arguments):
+
+$ python ex13.py first 2nd 3rd
+
+```{r, engine='python'}
+from sys import argv
+
+script, first, second, third = argv
+
+print "The script is called:", script
+print "Your first variable is:", first
+print "Your second variable is:", second
+print "Your third variable is:", third
+```
+
+So that it shows:
+
+> The script is called: ex13.py  
+> Your first variable is: first  
+> Your second variable is: 2nd  
+> Your third variable is: 3rd  
+
+## R code
+
+**TODO**:  figure out how to do same/similar in R
+
+In the meantime, substitute the following:
+
+```{r, results="hold", collapse=TRUE}
+# http://adv-r.had.co.nz/Functions.html
+f <- function(x) x^2
+print("The function is:")
+f
+print("The function's formals are:")
+formals(f)
+print("The function's body is:")
+body(f)
+print("The fuction's environment is:")
+environment(f)
+```
