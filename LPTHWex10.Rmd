@@ -1,0 +1,49 @@
+---
+title: "ex10"
+author: "Robert A. Stevens"
+date: "July 25, 2014"
+output: html_document
+---
+
+http://learnpythonthehardway.org/book/ex10.html
+
+Exercise 10: What Was That?
+
+Python code
+
+```{r, engine='python'}
+tabby_cat = "\tI'm tabbed in."
+persian_cat = "I'm split\non a line."
+backslash_cat = "I'm \\ a \\ cat."
+
+fat_cat = """
+I'll do a list:
+\t* Cat food
+\t* Fishies
+\t* Catnip\n\t* Grass
+"""
+
+print tabby_cat
+print persian_cat
+print backslash_cat
+print fat_cat
+```
+
+R code
+
+```{r, results="hold", collapse=TRUE}
+tabby_cat <- "\tI'm tabbed in."
+persian_cat <- "I'm split\non a line."
+backslash_cat <- "I'm \\ a \\ cat."
+
+fat_cat <- paste(
+  "I'll do a list:\n",
+  "\t* Cat food\n",
+  "\t* Fishies\n",
+  "\t* Catnip\n\t* Grass", sep = "")
+
+cat(tabby_cat)
+cat(persian_cat)
+cat(backslash_cat)
+cat(fat_cat)
+```
