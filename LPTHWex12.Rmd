@@ -1,0 +1,44 @@
+---
+title: "ex12"
+author: "Robert A. Stevens"
+date: "July 26, 2014"
+output: html_document
+---
+
+http://learnpythonthehardway.org/book/ex12.html
+
+Exercise 12: Prompting People
+
+Python code
+
+```{r, engine='python'}
+# age = raw_input("How old are you? ")
+print "How old are you?"
+age = "38" # for Rmd
+# height = raw_input("How tall are you? ")
+print "How tall are you?"
+height = '6\'2"' # for Rmd
+# weight = raw_input("How much do you weigh? ")
+print "How much do you weigh?"
+weight = "180 lbs" # for Rmd
+
+print "So, you're %r old, %r tall and %r heavy." % (
+    age, height, weight)
+```
+
+R code
+
+```{r, results="hold", collapse=TRUE}
+# age <- readline("How old are you? ")
+cat("How old are you?")
+age <- "38" # for Rmd
+# height <- readline("How tall are you? ")
+cat("How tall are you?")
+height <- '6\'2"' # for Rmd
+# weight <- readline("How much do you weigh? ")
+cat("How much do you weigh?")
+weight <- "180 lbs" # for Rmd
+
+sprintf("So, you're %s old, %s tall and %s heavy.", 
+        age, height, weight)
+```
