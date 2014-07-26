@@ -1,0 +1,44 @@
+---
+title: "ex8"
+author: "Robert A. Stevens"
+date: "July 9, 2014"
+output: html_document
+---
+
+http://learnpythonthehardway.org/book/ex8.html
+
+Exercise 8: Printing, Printing
+
+Python code
+
+```{r, engine='python'}
+formatter = "%r %r %r %r"
+
+print formatter % (1, 2, 3, 4)
+print formatter % ("one", "two", "three", "four")
+print formatter % (True, False, False, True)
+print formatter % (formatter, formatter, formatter, formatter)
+print formatter % (
+    "I had this thing.",
+    "That you could type up right.",
+    "But it didn't sing.",
+    "So I said goodnight."
+)
+```
+
+R code
+
+```{r, results="hold"}
+formatter <- "%s %s %s %s"
+
+sprintf(formatter, 1, 2, 3, 4)
+sprintf(formatter, "one", "two", "three", "four")
+sprintf(formatter, TRUE, FALSE, FALSE, TRUE)
+sprintf(formatter, formatter, formatter, formatter, formatter)
+sprintf(formatter,
+    "I had this thing.",
+    "That you could type up right.",
+    "But it didn't sing.",
+    "So I said goodnight."
+)
+```
