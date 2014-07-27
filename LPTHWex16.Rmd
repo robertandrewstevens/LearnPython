@@ -1,0 +1,111 @@
+---
+title: "ex16"
+author: "Robert A. Stevens"
+date: "July 26, 2014"
+output: html_document
+---
+
+http://learnpythonthehardway.org/book/ex16.html
+
+Exercise 16: Reading and Writing Files
+
+## Python code
+
+**TODO**:  figure out how to do this in RMarkdown
+
+There are actually two things you will see. First the output of your new script:
+
+$ python ex16.py test.txt
+
+```{r, engine='python'}
+from sys import argv
+
+script, filename = argv
+
+print "We're going to erase %r." % filename
+print "If you don't want that, hit CTRL-C (^C)."
+print "If you do want that, hit RETURN."
+
+raw_input("?")
+
+print "Opening the file..."
+target = open(filename, 'w')
+
+print "Truncating the file.  Goodbye!"
+target.truncate()
+
+print "Now I'm going to ask you for three lines."
+
+line1 = raw_input("line 1: ")
+line2 = raw_input("line 2: ")
+line3 = raw_input("line 3: ")
+
+print "I'm going to write these to the file."
+
+target.write(line1)
+target.write("\n")
+target.write(line2)
+target.write("\n")
+target.write(line3)
+target.write("\n")
+
+print "And finally, we close it."
+target.close()
+```
+
+So that it shows:
+
+We're going to erase 'test.txt'.  
+If you don't want that, hit CTRL-C (^C).  
+If you do want that, hit RETURN.  
+?  
+Opening the file...  
+Truncating the file.  Goodbye!  
+Now I'm going to ask you for three lines.  
+line 1:  Mary had a little lamb  
+line 2:  It's fleece was white as snow  
+line 3:  It was also tasty  
+I'm going to write these to the file.  
+And finally, we close it.  
+
+## R code
+
+**TODO**:  figure out how to do same/similar in R
+
+In the meantime, substitute the following:
+
+```{r, results="hold", collapse=TRUE}
+from sys import argv
+
+script, filename = argv
+
+print "We're going to erase %r." % filename
+print "If you don't want that, hit CTRL-C (^C)."
+print "If you do want that, hit RETURN."
+
+raw_input("?")
+
+print "Opening the file..."
+target = open(filename, 'w')
+
+print "Truncating the file.  Goodbye!"
+target.truncate()
+
+print "Now I'm going to ask you for three lines."
+
+line1 = raw_input("line 1: ")
+line2 = raw_input("line 2: ")
+line3 = raw_input("line 3: ")
+
+print "I'm going to write these to the file."
+
+target.write(line1)
+target.write("\n")
+target.write(line2)
+target.write("\n")
+target.write(line3)
+target.write("\n")
+
+print "And finally, we close it."
+target.close()
+```
