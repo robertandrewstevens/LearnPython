@@ -11,7 +11,7 @@ Exercise 1: A Good First Program
 
 Python code
 
-```{r, engine='python'}
+```
 print "Hello World!"
 print "Hello Again"
 print "I like typing this."
