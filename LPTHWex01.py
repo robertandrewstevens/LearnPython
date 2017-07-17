@@ -1,0 +1,22 @@
+---
+title: "ex1"
+author: "Robert A. Stevens"
+date: "July 9, 2014"
+output: html_document
+---
+
+http://learnpythonthehardway.org/book/ex1.html
+
+Exercise 1: A Good First Program
+
+Python code
+
+```{python}
+print "Hello World!"
+print "Hello Again"
+print "I like typing this."
+print "This is fun."
+print 'Yay! Printing.'
+print "I'd much rather you 'not'."
+print 'I "said" do not touch this.'
+```

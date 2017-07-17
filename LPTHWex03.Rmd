@@ -11,7 +11,7 @@ Exercise 3: Numbers and Math
 
 Python code
 
-```{r, engine='python'}
+```
 print "I will now count my chickens:"
 
 print "Hens", 25 + 30 / 6
@@ -39,7 +39,7 @@ print "Is it less or equal?", 5 <= -2
 
 R code
 
-```{r}
+```{r, comment=NA}
 cat("I will now count my chickens:\n")
 
 cat("Hens", 25 + 30 / 6, "\n")
