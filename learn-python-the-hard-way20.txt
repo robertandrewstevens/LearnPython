@@ -1,0 +1,43 @@
+
+Exercise 20: Functions And Files
+Remember your checklist for functions, then do this exercise paying close attention to how functions and files can work together to make useful stuff.
+    from sys import argv
+script, input_file = argv
+def print_all(f): print f.read()
+def rewind(f): f.seek(0)
+def print_a_line(line_count, f): print line_count, f.readline()
+current_file = open(input_file)
+print "First let's print the whole file:\n"
+print_all(current_file)
+print "Now let's rewind, kind of like a tape."
+rewind(current_file)
+print "Let's print three lines:"
+current_line = 1 print_a_line(current_line, current_file)
+current_line = current_line + 1 print_a_line(current_line, current_file)
+current_line = current_line + 1 print_a_line(current_line, current_file)
+  61
+Learn Python The Hard Way, Release 2.0
+Pay close attention to how we pass in the current line number each time we run print_a_line.
+What You Should See
+     $ python ex20.py test.txt
+First let's print the whole file:
+To all the people out there.
+I say I don't like my hair.
+I need to shave it off.
+Now let's rewind, kind of like a tape.
+Let's print three lines:
+1 To all the people out there.
+2 I say I don't like my hair. 3 I need to shave it off.
+$
+ Extra Credit
+1. 2.
+3. 4. 5.
+Go through and write English comments for each line to understand what’s going on.
+Each time print_a_line is run you are passing in a variable current_line. Write out what current_line is equal to on each function call, and trace how it becomes line_count in print_a_line.
+Find each place a function is used, and go check its def to make sure that you are giving it the right arguments.
+Research online what the seek function for file does. Try pydoc file and see if you can figure it out from there.
+Research the shorthand notation += and rewrite the script to use that.
+ 62
+Exercise 20: Functions And Files
+1 2 3 4 5 6 7 8 9
+10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28

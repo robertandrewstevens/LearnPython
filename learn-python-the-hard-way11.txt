@@ -1,0 +1,32 @@
+
+Exercise 11: Asking Questions
+Now it is time to pick up the pace. I have got you doing a lot of printing so that you get used to typing simple things, but those simple things are fairly boring. What we want to do now is get data into your programs. This is a little tricky because you have learn to do two things that may not make sense right away, but trust me and do it anyway. It will make sense in a few exercises.
+Most of what software does is the following:
+1. Take some kind of input from a person.
+2. Change it.
+3. Print out something to show how it changed.
+So far you have only been printing, but you haven’t been able to get any input from a person, or change it. You may not even know what “input” means, so rather than talk about it, let’s have you do some and see if you get it. Next exercise we’ll do more to explain it.
+1 2 3 4 5 6 7 8 9
+    print "How old are you?", age = raw_input()
+print "How tall are you?", height = raw_input()
+print "How much do you weigh?", weight = raw_input()
+print "So, you're %r old, %r tall and %r heavy." % ( age, height, weight)
+  Note:
+Notice that we put a , (comma) at the end of each print line. This is so that print doesn’t end the line with a newline and go to the next line.
+35
+  
+Learn Python The Hard Way, Release 2.0
+What You Should See
+Extra Credit
+     $ python ex11.py
+How old are you? 35
+How tall are you? 6'2"
+How much do you weigh? 180lbs
+So, you're '35' old, '6\'2"' tall and '180lbs' heavy. $
+ 1. 2. 3. 4.
+Go online and find out what Python’s raw_input does.
+Can you find other ways to use it? Try some of the samples you find.
+Write another “form” like this to ask some other questions.
+Related to escape sequences, try to find out why the last line has ’6\’2"’ with that \’ sequence. See how the single-quote needs to be escaped because otherwise it would end the string?
+ 36
+Exercise 11: Asking Questions

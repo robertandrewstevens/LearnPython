@@ -1,0 +1,67 @@
+
+Exercise 24: More Practice
+You are getting to the end of this section. You should have enough Python “under your fingers” to move onto learning about how programming really works, but you should do some more practice. This exercise is longer and all about building up stamina. The next exercise will be similar. Do them, get them exactly right, and do your checks.
+1 print "Let's practice everything."
+2 print 'You\'d need to know \'bout escapes with \\ that do \n newlines and \t tabs.'
+3
+4 poem = """
+5 \tThe lovely world
+6 with logic so firmly planted
+7 cannot discern \n the needs of love
+8 nor comprehend passion from intuition
+9 and requires an explanation
+    10 \n\t\twhere there is none.
+11 """
+12
+13 print "--------------"
+14 print poem
+15 print "--------------"
+16 17
+18 five=10-2+3-6
+19 print "This should be five: %s" % five
+20
+21 def 22
+23
+24
+25
+26
+27
+28 start_point = 10000
+29 beans, jars, crates = secret_formula(start_point)
+30
+31 print "With a starting point of: %d" % start_point
+secret_formula(started): jelly_beans = started * 500 jars = jelly_beans / 1000 crates = jars / 100
+return jelly_beans, jars, crates
+  71
+Learn Python The Hard Way, Release 2.0
+32 print "We'd have %d beans, %d jars, and %d crates." % (beans, jars, crates) 33
+34 start_point = start_point / 10
+35
+36 print "We can also do that this way:"
+37 print "We'd have %d beans, %d jars, and %d crates." % secret_formula(start_point)
+What You Should See
+          $ python ex24.py
+Let's practice everything.
+You'd need to know 'bout escapes with \ that do
+ newlines and          tabs.
+--------------
+        The lovely world
+with logic so firmly planted
+cannot discern
+ the needs of love
+nor comprehend passion from intuition
+and requires an explanation
+                where there is none.
+--------------
+This should be five: 5
+With a starting point of: 10000
+We'd have 5000000 beans, 5000 jars, and 50 crates. We can also do that this way:
+We'd have 500000 beans, 500 jars, and 5 crates.
+$
+ Extra Credit
+1. Make sure to do your checks: read it backwards, read it out loud, put comments above confusing parts.
+2. Break the file on purpose, then run it to see what kinds of errors you get. Make sure you can fix it.
+72 Exercise 24: More Practice
+ 
+1 2 3 4 5 6 7 8 9
+10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30

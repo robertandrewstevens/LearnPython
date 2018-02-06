@@ -1,0 +1,27 @@
+---
+title: "Python notebook"
+output: 
+  html_notebook: default
+  html_document: default
+---
+
+from "Python notebook.jpg"
+
+Python code:
+
+python3 -m pip install --user numpy scipy matplotlib ipython jupyter pandas sympy nose
+python3 -m pip install --user seaborn
+
+```{python, engine.path="/usr/local/bin/python3"}
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+np.random.seed(1983)
+
+x = np.random.randn(1000)
+
+sns.kdeplot(x)
+
+plt.show()
+```

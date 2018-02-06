@@ -1,0 +1,39 @@
+
+Exercise 14: Prompting And Passing
+Let’s do one exercise that uses argv and raw_input together to ask the user something specific. You will need this for the next exercise where we learn to read and write files. In this exercise we’ll use raw_input slightly differently by having it just print a simple > prompt. This is similar to a game like Zork or Adventure.
+1 2 3 4 5 6 7 8 9
+10 11 12 13 14 15 16 17 18 19 20 21
+    from sys import argv script, user_name = argv
+prompt = '> '
+print "Hi %s, I'm the %s script." % (user_name, script) print "I'd like to ask you a few questions."
+print "Do you like me %s?" % user_name
+likes = raw_input(prompt)
+print "Where do you live %s?" % user_name lives = raw_input(prompt)
+print "What kind of computer do you have?" computer = raw_input(prompt)
+print """
+Alright, so you said %r about liking me. You live in %r. Not sure where that is. And you have a %r computer. Nice.
+""" % (likes, lives, computer)
+ Notice though that we make a variable prompt that is set to the prompt we want, and we give that to raw_input instead of typing it over and over. Now if we want to make the prompt something else, we just change it in this one spot and rerun the script.
+Very handy.
+ 43
+Learn Python The Hard Way, Release 2.0
+What You Should See
+When you run this, remember that you have to give the script your name for the argv arguments.
+     $ python ex14.py Zed
+Hi Zed, I'm the ex14.py script.
+I'd like to ask you a few questions. Do you like me Zed?
+> yes
+Where do you live Zed?
+> America
+What kind of computer do you have?
+> Tandy
+Alright, so you said 'yes' about liking me.
+You live in 'America'.  Not sure where that is.
+And you have a 'Tandy' computer.  Nice.
+ Extra Credit
+1. 2. 3. 4.
+Find out what Zork and Adventure were. Try to find a copy and play it. Change the prompt variable to something else entirely.
+Add another argument and use it in your script.
+MakesureyouunderstandhowIcombineda"""stylemulti-linestringwiththe%formatactivator as the last print.
+ 44
+Exercise 14: Prompting And Passing

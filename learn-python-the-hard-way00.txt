@@ -1,0 +1,353 @@
+Learn Python The Hard Way
+
+Release 2.0
+
+Zed A. Shaw
+
+June 24, 2011
+
+CONTENTS
+
+The Hard Way Is Easier 
+
+Exercise 0: The Setup 
+
+Exercise 1: A Good First Program 
+
+Exercise 2: Comments And Pound Characters 
+
+Exercise 3: Numbers And Math 
+
+Exercise 4: Variables And Names 
+ 
+Exercise 5: More Variables And Printing 
+
+Exercise 6: Strings And Text 
+
+Exercise 7: More Printing 
+
+Exercise 8: Printing, Printing 
+
+Exercise 9: Printing, Printing, Printing 
+
+Exercise 10: What Was That? 
+
+Exercise 11: Asking Questions 
+
+Exercise 12: Prompting People 
+
+Exercise 13: Parameters, Unpacking, Variables 
+
+Exercise 14: Prompting And Passing 
+
+Exercise 15: Reading Files 
+
+Exercise 16: Reading And Writing Files 
+
+Exercise 17: More Files 
+
+Exercise 18: Names, Variables, Code, Functions 
+
+Exercise 19: Functions And Variables 
+
+Exercise 20: Functions And Files 
+
+Exercise 21: Functions Can Return Something 
+
+Exercise 22: What Do You Know So Far? 
+
+Exercise 23: Read Some Code 
+
+Exercise 24: More Practice 
+
+Exercise 25: Even More Practice 
+
+Exercise 26: Congratulations, Take A Test!
+
+Exercise 27: Memorizing Logic 
+
+Exercise 28: Boolean Practice 
+
+Exercise 29: What If 
+
+Exercise 30: Else And If 
+
+Exercise 31: Making Decisions 
+
+Exercise 32: Loops And Lists 
+
+Exercise 33: While Loops 
+
+Exercise 34: Accessing Elements Of Lists 
+
+Exercise 35: Branches and Functions 
+
+Exercise 36: Designing and Debugging 
+
+Exercise 37: Symbol Review 
+
+Exercise 38: Reading Code 
+
+Exercise 39: Doing Things To Lists 
+
+Exercise 40: Dictionaries, Oh Lovely Dictionaries 
+
+Exercise 41: Gothons From Planet Percal #25 
+
+Exercise 42: Gothons Are Getting Classy 
+
+Exercise 43: You Make A Game 
+
+Exercise 44: Evaluating Your Game 
+
+Exercise 45: Is-A, Has-A, Objects, and Classes 
+
+Exercise 46: A Project Skeleton ]
+
+Exercise 47: Automated Testing 
+
+Exercise 48: Advanced User Input 
+
+Exercise 49: Making Sentences 
+ 
+Exercise 50: Your First Website 
+
+Exercise 51: Getting Input From A Browser 
+
+Exercise 52: The Start Of Your Web Game 
+
+Next Steps 
+
+Advice From An Old Programmer 
+
+Welcome to the 2nd Edition of Learn Python the hard way. You can visit the companion site to the book at http://learnpythonthehardway.org/ where you can purchase digital downloads and paper versions of the book. The free HTML version of the book is available at http://learnpythonthehardway.org/book/.
+
+
+The Hard Way Is Easier
+
+This simple book is meant to get you started in programming. The title says it’s the hard way to learn to write code; but it’s actually not. It’s only the “hard” way because it’s the way people used to teach things. With the help of this book, you will do the incredibly simple things that all programmers need to do to learn a language:
+
+1. Go through each exercise.
+
+2. Type in each sample exactly. 
+
+3. Make it run.
+
+That’s it. This will be very difficult at first, but stick with it. If you go through this book, and do each exercise for one or two hours a night, you will have a good foundation for moving onto another book. You might not really learn “programming” from this book, but you will learn the foundation skills you need to start learning the language.
+
+This book’s job is to teach you the three most essential skills that a beginning programmer needs to know: Reading and Writing, Attention to Detail, Spotting Differences.
+
+Reading and Writing
+
+It seems stupidly obvious, but, if you have a problem typing, you will have a problem learning to code. Especially if you have a problem typing the fairly odd characters in source code. Without this simple skill you will be unable to learn even the most basic things about how software works.
+
+Typing the code samples and getting them to run will help you learn the names of the symbols, get familiar with typing them, and get you reading the language.
+
+Attention to Detail
+
+The one skill that separates bad programmers from good programmers is attention to detail. In fact, it’s what separates the good from the bad in any profession. Without paying attention to the tiniest details of your work, you will miss key elements of what you create. In programming, this is how you end up with bugs and difficult-to-use systems.
+
+By going through this book, and copying each example exactly, you will be training your brain to focus on the details of what you are doing, as you are doing it.
+
+Spotting Differences
+
+A very important skill – that most programmers develop over time – is the ability to visually notice differences between things. An experienced programmer can take two pieces of code that are slightly different and immediately start pointing out the differences. Programmers have invented tools to make this even easier, but we won’t be using any of these. You first have to train your brain the hard way, then you can use the tools.
+
+While you do these exercises, typing each one in, you will be making mistakes. It’s inevitable; even seasoned programmers would make a few. Your job is to compare what you have written to what’s required, and fix all the differences. By doing so, you will train yourself to notice mistakes, bugs, and other problems.
+
+Do Not Copy-Paste
+
+You must type each of these exercises in, manually. If you copy and paste, you might as well just not even do them. The point of these exercises is to train your hands, your brain, and your mind in how to read, write, and see code. If you copy-paste, you are cheating yourself out of the effectiveness of the lessons.
+
+A Note On Practice And Persistence
+
+While you are studying programming, I’m studying how to play guitar. I practice it every day for at least 2 hours a day. I play scales, chords, and arpeggios for an hour at least and then learn music theory, ear training, songs and anything else I can. Some days I study guitar and music for 8 hours because I feel like it and it’s fun. To me repetitive practice is natural and just how to learn something. I know that to get good at anything you have to practice every day, even if I suck that day (which is often) or it’s difficult. Keep trying and eventually it’ll be easier and fun.
+
+As you study this book, and continue with programming, remember that anything worth doing is difficult at first. Maybe you are the kind of person who is afraid of failure so you give up at the first sign of difficulty. Maybe you never learned self-discipline so you can’t do anything that’s “boring”. Maybe you were told that you are “gifted” so you never attempt anything that might make you seem stupid or not a prodigy. Maybe you are competitive and unfairly compare yourself to someone like me who’s been programming for 20+ years.
+
+Whatever your reason for wanting to quit, keep at it. Force yourself. If you run into an Extra Credit you can’t do, or a lesson you just do not understand, then skip it and come back to it later. Just keep going because with programming there’s this very odd thing that happens.
+
+At first, you will not understand anything. It’ll be weird, just like with learning any human language. You will struggle with words, and not know what symbols are what, and it’ll all be very confusing. Then one day BANG your brain will snap and you will suddenly “get it”. If you keep doing the exercises and keep trying to understand them, you will get it. You might not be a master coder, but you will at least understand how programming works.
+
+If you give up, you won’t ever reach this point. You will hit the first confusing thing (which is everything at first) and then stop. If you keep trying, keep typing it in, trying to understand it and reading about it, you will eventually get it.
+
+But, if you go through this whole book, and you still do not understand how to code, at least you gave it a shot. You can say you tried your best and a little more and it didn’t work out, but at least you tried. You can be proud of that.
+
+License
+
+This book is Copyright (C) 2010 by Zed A. Shaw. You are free to distribute this book to anyone you want, so long as you do not charge anything for it, and it is not altered. You must give away the book in its entirety, or not at all. This means it’s alright for you to teach a class using the book, so long as you aren’t charging students for the book and you give them the whole book unmodified.
+
+Special Thanks
+
+I’d like to thank a few people who helped with this edition of the book. First is my editor at Pretty Girl Editing Services who help me edit the book and is just lovely all by herself. Then there’s Greg Newman, who did the cover jacket and artwork, plus reviewed copies of the book. His artwork made the book look like a real book, and didn’t mind that I totally forgot to give him credit in the first edition. I’d also like to thank Brian Shumate for doing the website landing page and other site design help, which I need a lot of help on.
+
+Finally, I’d like to thank the hundreds of thousands of people who read the first edition and especially the ones who submitted bug reports and comments to improve the book. It really made this edition solid and I couldn’t have done it without all of you. Thank you.
+
+Exercise 0: The Setup
+
+This exercise has no code. It is simply the exercise you complete to get your computer setup to run Python. You should follow these instructions as exactly as possible. For example, Mac OSX computers already have Python 2, so do not install Python 3 (or any Python).
+
+Mac OSX
+
+To complete this exercise, complete the following tasks:
+
+1. Go to http://learnpythonthehardway.org/exercise0.html with your browser, get the gedit text ed- itor, and install it.
+
+2. Put gedit (your editor) in your Dock so you can reach it easily.
+
+(a) Run gedit so we can fix some stupid defaults it has.
+
+(b) Open Preferences from the gedit menu and select the Editor tab.
+
+(c) Change Tab width: to 4.
+
+(d) Select (make sure a check mark is in) Insert spaces instead of tabs. 
+
+(e) Turn on “Automatic indentation” as well.
+
+(f) Open the View tab and turn on “Display line numbers”.
+
+3. Find your “Terminal” program. Search for it. You will find it.
+
+4. Put your Terminal in your Dock as well.
+
+5. Run your Terminal program. It won’t look like much.
+
+6. In your Terminal program, run python. You run things in Terminal by just typing their name and hitting RETURN.
+
+7. Hit CTRL-D (^D) and get out of python.
+
+8. You should be back at a prompt similar to what you had before you typed python. If not find out why.
+
+9. Learn how to make a directory in the Terminal. Search online for help.
+
+10. Learn how to change into a directory in the Terminal. Again search online.
+
+11. Use your editor to create a file in this directory. You will make the file, “Save” or “Save As...”, and pick this directory.
+
+12. Go back to Terminal using just the keyboard to switch windows. Look it up if you can’t figure it out.
+
+13. Back in Terminal, see if you can list the directory to see your newly created file. Search online for how to list a directory.
+
+Note: If you have problems with gedit, which is possible with non-English keyboard layouts, then I suggest you try Textwrangler found at http://www.barebones.com/products/textwrangler/ instead.
+
+OSX: What You Should See
+
+Here’s me doing the above on my computer in Terminal. Your computer would be different, so see if you can figure out all the differences between what I did and what you should do.
+
+Last login: Sat Apr 24 00:56:54 on ttys001
+~ $ python
+Python 2.5.1 (r251:54863, Feb 6 2009, 19:02:12)
+[GCC 4.0.1 (Apple Inc. build 5465)] on darwin
+Type "help", "copyright", "credits" or "license" for more information. >>> ^D
+~ $ mkdir mystuff
+~ $ cd mystuff
+mystuff $ ls
+# ... Use Gedit here to edit test.txt.... mystuff $ ls
+test.txt
+mystuff $
+
+Windows
+
+Note: Contributed by zhmark.
+
+  1. 2.
+Go to http://learnpythonthehardway.org/wiki/ExerciseZero with your browser, get the gedit text editor, and install it. You do not need to be administrator to do this.
+Make sure you can get to gedit easily by putting it on your desktop and/or in Quick Launch. Both options are available during setup.
+Exercise 0: The Setup
+ 8
+Learn Python The Hard Way, Release 2.0
+(a) Run gedit so we can fix some stupid defaults it has.
+(b) Open Edit->Preferences select the Editor tab.
+(c) Change Tab width: to 4.
+(d) Select (make sure a check mark is in) Insert spaces instead of tabs. (e) Turn on “Automatic indentation” as well.
+(f) Open the View tab turn on “Display line numbers”.
+3. Find your “Terminal” program. It’s called Command Prompt. Alternatively just run cmd.
+4. Make a shortcut to it on your desktop and/or Quick Launch for your convenience.
+5. Run your Terminal program. It won’t look like much.
+6. In your Terminal program, run python. You run things in Terminal by just typing their name and hitting RETURN.
+(a) If you run python and it’s not there (python is not recognized..). Install it from http://python.org/download
+(b) Make sure you install Python 2 not Python 3.
+(c) You may be better off with ActiveState Python especially when you miss Administrative
+rights
+7. Hit CTRL-Z (^Z), Enter and get out of python.
+8. You should be back at a prompt similar to what you had before you typed python. If not find out why.
+9. Learn how to make a directory in the Terminal. Search online for help.
+10. Learn how to change into a directory in the Terminal. Again search online.
+11. Use your editor to create a file in this directory. Make the file, “Save” or “Save As...”, and pick this directory.
+12. Go back to Terminal using just the keyboard to switch windows. Look it up if you can’t figure it out.
+13. Back in Terminal, see if you can list the directory to see your newly created file. Search online for how to list a directory.
+    Warning: Windows is a big problem for Python. Sometimes you install Python and one com- puter will have no problems, and another computer will be missing important features. If you have problems, please visit: http://docs.python.org/faq/windows.html
+  Windows 9
+Learn Python The Hard Way, Release 2.0
+Windows: What You Should See
+C:\Documents and Settings\you>python
+ActivePython 2.6.5.12 (ActiveState Software Inc.) based on
+Python 2.6.5 (r265:79063, Mar 20 2010, 14:22:52) [MSC v.1500 32 bit (Intel)] on win32 Type "help", "copyright", "credits" or "license" for more information.
+>>> ^Z
+C:\Documents and Settings\you>mkdir mystuff
+C:\Documents and Settings\you>cd mystuff
+... Here you would use gedit to make test.txt in mystuff ...
+C:\Documents and Settings\you\mystuff>
+<bunch of unimportant errors if you istalled it as non-admin - ignore them - hit Enter>
+C:\Documents and Settings\you\mystuff>dir Volume in drive C is
+Volume Serial Number is 085C-7E02
+ Directory of C:\Documents and Settings\you\mystuff
+     04.05.2010 23:32 04.05.2010 23:32 04.05.2010 23:32
+<DIR> <DIR>
+.
+..
+6 test.txt
+1 File(s)
+2 Dir(s) 14 804 623 360 bytes free
+C:\Documents and Settings\you\mystuff>
+You will probably see a very different prompt, Python information, and other stuff but this is the general idea. If your system is different let us know at http://learnpythonthehardway.org and we’ll fix it.
+Linux
+Linux is a varied operating system with a bunch of different ways to install software. I’m assuming if you are running Linux then you know how to install packages so here are your instructions:
+6 bytes
+  10
+1. Go to http://learnpythonthehardway.org/wiki/ExerciseZero with your browser, get the gedit text editor, and install it.
+2. Make sure you can get to gedit easily by putting it in your window manager’s menu. (a) Run gedit so we can fix some stupid defaults it has.
+(b) Open Preferences select the Editor tab.
+Exercise 0: The Setup
+Learn Python The Hard Way, Release 2.0
+(c) Change Tab width: to 4.
+(d) Select (make sure a check mark is in) Insert spaces instead of tabs. (e) Turn on “Automatic indentation” as well.
+(f) Open the View tab turn on “Display line numbers”.
+3. Find your “Terminal” program. It could be called GNOME Terminal, Konsole, or xterm.
+4. Put your Terminal in your Dock as well.
+5. Run your Terminal program. It won’t look like much.
+6. In your Terminal program, run python. You run things in Terminal by just typing their name and hitting RETURN.
+(a) If you run python and it’s not there, install it. Make sure you install Python 2 not Python 3.
+7. Hit CTRL-D (^D) and get out of python.
+8. You should be back at a prompt similar to what you had before you typed python. If not find out why.
+9. Learn how to make a directory in the Terminal. Search online for help.
+10. Learn how to change into a directory in the Terminal. Again search online.
+11. Use your editor to create a file in this directory. Typically you will make the file, “Save” or “Save As..”, and pick this directory.
+12. Go back to Terminal using just the keyboard to switch windows. Look it up if you can’t figure it out.
+13. Back in Terminal see if you can list the directory to see your newly created file. Search online for how to list a directory.
+Linux: What You Should See
+     $ python
+Python 2.6.5 (r265:79063, Apr 1 2010, 05:28:39)
+[GCC 4.4.3 20100316 (prerelease)] on linux2
+Type "help", "copyright", "credits" or "license" for more information. >>>
+$ mkdir mystuff
+$ cd mystuff
+# ... Use gedit here to edit test.txt ...
+$ ls
+test.txt
+$
+ You will probably see a very different prompt, Python information, and other stuff but this is the general idea.
+Linux 11
+ 
+Learn Python The Hard Way, Release 2.0
+Warnings For Beginners
+You are done with this exercise. This exercise might be hard for you depending on your familiarity with your computer. If it is difficult, take the time to read and study and get through it, because until you can do these very basic things you will find it difficult to get much programming done.
+If a programmer tells you to use vim or emacs, tell them, “No.” These editors are for when you are a better programmer. All you need right now is an editor that lets you put text into a file. We will use gedit because it is simple and the same on all computers. Professional programmers use gedit so it’s good enough for you starting out.
+A programmer may try to get you to install Python 3 and learn that. You should tell them, “When all of the python code on your computer is Python 3, then I’ll try to learn it.” That should keep them busy for about 10 years.
+A programmer will eventually tell you to use Mac OSX or Linux. If the programmer likes fonts and typography, they’ll tell you to get a Mac OSX computer. If they like control and have a huge beard, they’ll tell you to install Linux. Again, use whatever computer you have right now that works. All you need is gedit, a Terminal, and python.
+Finally the purpose of this setup is so you can do three things very reliably while you work on the exercises:
+1. Write exercises using gedit. 2. Run the exercises you wrote.
+3. Fix them when they are broken. 4. Repeat.
+Anything else will only confuse you, so stick to the plan.
+  12 Exercise 0: The Setup
